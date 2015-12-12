@@ -1,6 +1,8 @@
 class ApiController < ActionController::Base
   protect_from_forgery with: :null_session
   before_action :authenticate_user_from_token!
+  skip_before_action :verify_authenticity_token
+
   respond_to :json
 
   def current_user
