@@ -1,6 +1,10 @@
 # gmusic-sync-service
 A lightweight service for DJing google music
 
+Endpoints:  
+ - http://gmusic-sync-service-1.herokuapp.com/
+ - more to come
+
 
 ### Creating a user
 
@@ -23,10 +27,10 @@ this will give you your token to use on all requests
 `POST /api/songs.json`
 
 Headers must be set to what was received from signing in:
-
-`token`
-`email`
-
+```
+token
+email
+```
 ### Retrieve a person's current song
 
 `GET /api/songs/:user_id/current.json`
